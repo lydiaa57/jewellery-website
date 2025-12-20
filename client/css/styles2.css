@@ -1,0 +1,31 @@
+.hero_outline {
+    -webkit-text-stroke: 0.7px rgb(252, 202, 2);
+
+    text-shadow:
+    0 0 90px #fcfcfc,
+    1px 1px 0 #FFD700,
+    -1px -1px 0 #FFD700,
+    1px -1px 0 #FFF700,
+    -1px 1px 0 #b37b0b,
+    0 0 5px #FFD700;
+
+    animation: glitter 1s infinite;
+}
+
+@keyframes glitter {
+  0% {
+    text-shadow: 0 0 8px #fff,1px 1px 0 #FFD700, -1px -1px 0 #FFD700, 1px -1px 0 #FFF700, -1px 1px 0 #FFD700, 0 2px #FFD700;
+  }
+  25% {
+    text-shadow: 0 0 3px #fff, 2px 0 0 #FFD700, -2px 1px 0 #FFD700, 1px -2px 0 #ffda05, -1px 1px 0 #FFD700, 0 0 14px #FFD700;
+  }
+  50% {
+    text-shadow: 0 0 8px #fff, -1px 2px 0 #FFD700, 2px -1px 0 #FFD700, 1px -2px 0 #FFF700, -2px 1px 0 #FFD700, 0 0 7px #FFD700;
+  }
+  75% {
+    text-shadow: 0 0 8px #fff, 2px 1px 0 #FFD700, -2px -1px 0 #FFD700, 1px -1px 0 #FFF700, -1px 1px 0 #FFD700, 0 0 6px #FFD700;
+  }
+  100% {
+    text-shadow: 0 0 2px #fff, 1px 1px 0 #FFD700, -1px -1px 0 #FFD700, 1px -1px 0 #FFF700, -1px 1px 0 #FFD700, 0 0 14px #FFD700;
+  }
+}
