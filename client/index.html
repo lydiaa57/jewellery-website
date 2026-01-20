@@ -17,11 +17,14 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
 
         <!-- Core theme CSS (includes Bootstrap) -->
+        <!-- Preload Orange Avenue font for faster first render -->
+        <link rel="preload" href="../fonts/Orange-Avenue-Outline.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/styles2.css" rel="stylesheet" />
-
-        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/libs.bundle.css">
+        <link rel="stylesheet" href="./assets/css/theme.bundle.css">
+   
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -61,7 +64,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Look stunning as you fall into a fairytale depravity</h2>
+                        <h2 class="text-white mt-0">Look stunning as you fall into a fairytale of depravity</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Our - definitely ;) - ethically sourced gemstones have looked stunning on royalty for genrations, and now for the gdp of a small country, on you, my queen!</p>
                         <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
@@ -105,73 +108,158 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Products-->
-        <div id="products">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/1.jpg" alt="..." />
-                            <div class="products-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/2.jpg" alt="..." />
-                            <div class="products-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/3.jpg" alt="..." />
-                            <div class="products-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/4.jpg" alt="..." />
-                            <div class="products-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/5.jpg" alt="..." />
-                            <div class="products-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="products-box" href="assets/img/products/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/products/thumbnails/6.jpg" alt="..." />
-                            <div class="products-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
+
+        <!-- Products- so my shop can make some money  -->
+        
+        <section class="page-section bg-white" id="products">
+        <div class="container px-4 px-lg-5">
+            <div class="row text-center">
+
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="mb-2 p-title">Impératrice Collection 2026</h2>
                 </div>
+                </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/emerald_earrings_1.jpg"
+                    data-default="assets/images/emerald_earrings_1.jpg"
+                    data-hover="assets/images/emerald_set.jpg"
+                    data-image="assets/images/emerald_earrings_1.jpg"
+                    data-name="Product 1"
+                    data-description="Part of a lavish wedding parure from Napoleon in 1810, the pair features two 45.20 carat emerals, 4 other emeralds and 108 diamonds. Height: 5.7cm, Length: 3.1cm"
+                    class="img-fluid hover-swap product-image"
+                    alt="E_earrings">
+                <p class="text-dark">Empress Marie-Louise Emerald Earrings</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/emerald_set.jpg"
+                    data-default="assets/images/emerald_set.jpg"
+                    data-hover="assets/images/emerald_necklace_2.jpg"
+                    data-image="assets/images/emerald_set.jpg"
+                    data-name="Product 2"
+                    data-description="Created in 1810 Paris, this features 32 vivid Colombian Emeralds with the centre stone over 13 carats and over 1100 diamonds. Height: 7cm, Length: 43cm"
+                    class="img-fluid hover-swap product-image"
+                    alt="e_necklace">
+                <p class="text-dark">Empress Marie-Louise Emerald Necklace</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/sapphire_earrings_1.jpg"
+                    data-default="assets/images/sapphire_earrings_1.jpg"
+                    data-hover="assets/images/sapphire_earrings_2.jpg"
+                    data-image="assets/images/sapphire_earrings_1.jpg"
+                    data-name="Product 3"
+                    data-description="Blue sapphire earrings in classic setting."
+                    class="img-fluid hover-swap product-image"
+                    alt="s_earrings">
+                <p class="text-dark">Product 3</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/sapphire_necklace_1.jpg"
+                    data-default="assets/images/saphire_necklace_1.jpg"
+                    data-hover="assets/images/sapphire_necklace_2.jpg"
+                    data-image="assets/images/sapphire_necklace_1.jpg"
+                    data-name="Product 4"
+                    data-description="Sapphire necklace with intricate goldwork."
+                    class="img-fluid hover-swap product-image"
+                    alt="s_necklace">
+                <p class="text-dark">Product 4</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/bow_1.jpg"
+                    data-default="assets/images/bow_1.jpg"
+                    data-hover="assets/images/bow_2.jpg"
+                    data-image="assets/images/bow_1.jpg"
+                    data-name="Product 5"
+                    data-description="A 1885 masterpiece studded with over 2400 diamonds"
+                    class="img-fluid hover-swap scale-bow product-image"
+                    alt="Bow">
+                <p class="text-dark">Empress Eugénie's Diamond Bow Brooch</p>
+</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img
+                    src="assets/images/pearl_tiara_1.jpg"
+                    data-default="assets/images/pearl_tiara_1.jpg"
+                    data-hover="assets/images/pearl_tiara_2.jpg"
+                    data-image="assets/images/pearl_tiara_1.jpg"
+                    data-name="Product 6"
+                    data-description="Vintage pearl tiara inspired by royal designs."
+                    class="img-fluid hover-swap product-image"
+                    alt="Pearl Tiara">
+                <p class="text-dark">Product 6</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img 
+                    src="assets/images/french_crown_1.jpg" 
+                    data-default="assets/images/french_crown_1.jpg"
+                    data-hover="assets/images/french_crown_2.jpg"
+                    data-image="assets/images/french_crown_1.jpg"
+                    data-name="Product 7"
+                    data-description="Antique French crown replica with fine details."
+                    class="img-fluid hover-swap product-image"
+                    alt="French Crown">
+                <p class="text-dark">Product 7</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <img 
+                    src="assets/images/sapphire_tiara_1.jpg"
+                    data-default="assets/images/sapphire_tiara_1.jpg"
+                    data-hover="assets/images/sapphire_tiara_2.jpg"
+                    data-image="assets/images/sapphire_tiara_1.jpg"
+                    data-name="Product 8"
+                    data-description="Elegant sapphire tiara with hand-set stones."
+                    class="img-fluid hover-swap product-image"
+                    alt="Sapphire Tiara">
+                <p class="text-dark">Product 8</p>
+            </div>
+
             </div>
         </div>
-        <!-- Call to action-->
+        </section>
+
+        <div id="productOverlay" class="overlay hidden">
+            <div class="overlay-content">
+
+                <button class="close-btn" aria-label="Close">&times;</button>
+
+                <div class="overlay-media">
+                    <button class="nav-btn prev-btn" aria-label="Previous image">&#8592;</button>
+                    <img id="overlayImage" class="overlay-img" alt="">
+                    <button class="nav-btn next-btn" aria-label="Next
+                     image">&#8594;</button>
+                    <div class="img-counter" id="imgCounter" aria-hidden="true"></div>
+                </div>
+
+                <div class="overlay-meta">
+                    <h2 id="overlayTitle"></h2>
+
+                    <p id="overlayDescription"></p>
+
+                    <p class="price">Price available upon request</p>
+
+                    <button class="interest-btn">Express Interest</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- slogan?. i like the 'armani dresses the wife, versace dresses the mistress' quote so am taking inspo (; '-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+                <h2 class="font-orange-outline">FOR THE WIFE</h2>
             </div>
         </section>
         <!-- Contact-->
@@ -211,7 +299,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required so I can give you a call x. </div>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required so we can give you a call x. </div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -250,13 +338,12 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2026 - LLGopaul Ltd.</div></div>
+        <footer class="bg-black py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted text-white">Copyright &copy; 2026 - LLGopaul Ltd.</div></div>
         </footer>
-        <script
-        src="https://code.jquery.com/jquery-3.7.1. js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
@@ -268,5 +355,118 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.hero_outline', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.divider', {
+                duration: 2000,
+                delay: 500,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.text-white-75.mb-5', {
+                duration: 2000,
+                delay: 500,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.btn-xl', {
+                duration: 2000,
+                delay: 500,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.text-white.mt-0', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.text-white-75.mb-4', {
+                duration: 2000,
+                delay: 500,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.text-white-75.mb-5', {
+                duration: 2000,
+                delay: 500,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.col-lg-3.col-md-6.text-center', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+                interval: 200
+            });
+
+            sr.reveal('.mt-0', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.text-muted.mb-0',{
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+            });
+
+            sr.reveal('.img-fluid', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+                interval: 200
+            });
+
+            sr.reveal('.text-dark', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+                interval: 200
+            });
+
+            sr.reveal('.text-muted.mb-5', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+                interval: 200
+            }); 
+
+            sr.reveal('.mb-5', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px'
+            });
+
+            sr.reveal('.form-floating.mb-5', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '50px',
+                interval: 200
+            });
+
+            sr.reveal('.font-orange-outline', {
+                duration: 4000,
+                origin: 'left',
+                distance: '300px',
+            });
+
+        </script>
+
+        <script src="../assets/js/vendor.bundle.js"></script>
+        <script src="../assets/js/theme.bundle.js"></script>
     </body>
 </html>
